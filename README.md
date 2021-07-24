@@ -5,19 +5,19 @@ The projects included in this repository are straightforward and easy to code. B
 
 * **Password Generator:**
  
-In this project you will create a program to generate passwords for you,using the random module in Python3.
+Generate passwords using the random module in Python3.
 
 
-* Guess Game:
+* **Guess Game**:
 
-In this project you will create a guessing game,in which user make attempts to identify the number chosen by the computer.
+Create a guessing game, in which user make attempts to identify the number chosen by the computer.
 
 
-* Tic Tac Toe Game: 
+* **Tic Tac Toe Game**: 
 
 This is a two player based "tic tac toe game", using various Python modules.
 
 
-* Credit Card Validator: 
+* **Credit Card Validator**: 
 
 Simple implementation of the "Luhn Algorithm" or Mod 10 Algorithm, verifies a valid credit card number.
