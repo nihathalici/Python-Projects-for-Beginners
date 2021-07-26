@@ -36,14 +36,35 @@ def select_marker_input():
 def place_marker(board, marker, position):
     board[position] = marker
 
+# returns True if there is win, else False
 def win_check(board, mark):
-    pass
-    
+
+    # across the top
+    return((board[7] == mark and board[8] == mark and board[9] == mark) or
+    # across the middle
+    (board[4] == mark and board[5] == mark and board[6] == mark) or
+    # across the bottom
+    (board[1] == mark and board[2] == mark and board[3] == mark) or
+    # down the left side
+    (board[7] == mark and board[4] == mark and board[1] == mark) or
+     # down the middle
+    (board[8] == mark and board[5] == mark and board[2] == mark) or
+    # down the right side
+    (board[9] == mark and board[6] == mark and board[3] == mark) or
+    # leading diagonal
+    (board[7] == mark and board[5] == mark and board[3] == mark) or
+    # trailing diagonal
+    (board[9] == mark and board[5] == mark and board[1] == mark))
+
 import random
 
+# random selection of first chance
 def choose_first():
-    pass
-
+    if random.randint(0, 1) == 0:
+        return 'Player 2'
+    else:
+        return 'Player 1'
+    
 def space_check(board, position):
     pass
 
