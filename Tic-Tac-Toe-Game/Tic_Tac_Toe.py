@@ -65,14 +65,26 @@ def choose_first():
     else:
         return 'Player 1'
     
+# checks for the availablity of slots on the board
 def space_check(board, position):
-    pass
+    return board[position] == ' '
 
+# returns True when board becomes full, else False
 def full_board_check(board):
-    pass
+    for i in range(1, 10):
+        if space_check(board, i):
+            return False
+    return True
 
+# player makes a choice for placing the marker
 def player_choice(board):
-    pass
+    position = 0
+
+    while position not in [1, 2, 3, 4, 5, 6, 7, 8, 9] or not space_check(board, position):
+        # if the particular slot is unavailble or
+        #   invalid input index
+        position = int(input('Choose your next position: (1-9) '))
+    return position
 
 def replay():
     pass
